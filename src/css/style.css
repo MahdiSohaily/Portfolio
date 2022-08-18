@@ -124,7 +124,7 @@ select {
 
 .secondary-header {
   color: var(--color-heading-desktop);
-  font-size: 40px;
+  font-size: 32px;
   font-weight: var(--fw-bold);
 }
 
@@ -132,6 +132,10 @@ select {
   .primary-header {
     color: var(--color-heading-desktop);
     font-size: var(--fs-900);
+  }
+
+  .secondary-header {
+    font-size: 40px;
   }
 }
 
