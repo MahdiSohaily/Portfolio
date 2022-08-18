@@ -2,8 +2,8 @@
 
 # Portfolio
 
-> The purpose of this project is to build a professional portfolio 
-in order to show the future projects that we are going to build and our skills to the employers.
+> I'm going to build this portfolio in order to show the future projects that I'm going to build 
+and my skills to the employers.
 
 
 ## Built With
@@ -24,7 +24,7 @@ in order to show the future projects that we are going to build and our skills t
 To get a local copy up and running follow these simple example steps.
 
 ### Setup
-````
+```
 $git clone https://github.com/MahdiSohaily/Portfolio.git
 cd Portfolio
 ```
@@ -34,7 +34,7 @@ Open index.html file
 
 ## Authors
 
-👤 **Author1**
+👤 **Mahdi Rezaei**
 
 - GitHub: [@MahdiSohaily](https://github.com/MahdiSohaily)
 - Twitter: [@Mahdi_Rezaei_AF](https://twitter.com/Mahdi_Rezaei_AF)
