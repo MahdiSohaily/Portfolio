@@ -307,6 +307,10 @@ nav {
   margin-bottom: var(--size-500);
 }
 
+.counter li p {
+  font-size: 13px;
+}
+
 .details {
   font-size: 16px;
   max-width: 50ch;
