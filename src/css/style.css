@@ -290,6 +290,12 @@ nav {
   box-shadow: 0 1px 16px -6px var(--color-border);
 }
 
+.card:hover .btn{
+  color: var(--color-white);
+  background-color: #4053FC;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
 .description{
   padding: var(--size-300);
 }
