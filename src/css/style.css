@@ -1,0 +1,63 @@
+:root {
+    --very-light-purple: hsl(240, 100%, 96%);
+    --light-purple: hsl(235, 100%, 83%);
+    --medium-purple: hsl(234, 100%, 75%);
+    --dark-purple: hsl(234, 100%, 69%);
+  
+    --color-border: hsl(218, 13%, 48%);
+    --color-icon: hsl(218, 20%, 39%);
+    --color-nav-p: hsl(218, 31%, 30%);
+  
+    --color-heading-mobile: hsl(218, 54%, 20%);
+    --color-heading-desktop: hsl(218, 76%, 15%);
+  
+    --light-blue: hsl(234, 97%, 62%);
+    --bright-blue: hsl(235, 72%, 48%);
+  
+    --color-white: hsl(0, 0%, 100%);
+    --color-milk-white: hsl(0, 0%, 90%);
+  
+    --color-light-gray: hsl(217, 13%, 74%);
+    --color-smoke-white: hsl(240, 100%, 96%);
+    --color-semi-white: hsl(218, 14%, 89%);
+  
+    --fs-tiny: 0.75em;
+    --fs-100: 0.8215em;
+    --fs-200: 0.9375em;
+    --fs-300: 1em;
+    --fs-400: 1.0625em;
+    --fs-500: 1.125;
+    --fs-600: 1.25em;
+    --fs-700: 2em;
+    --fs-800: 2.5em;
+    --fs-900: 3em;
+  
+  
+    --fs-primary-header: var(var(--fs-800));
+    --fs-secondary-header: var(var(--fs-700));
+    --fs-head-info: var(--fs-300);
+    --fs-navigation: var(var(--fs-700));
+  
+    @media screen and (min-width:40em) {
+      --fs-primary-header: var(var(--fs-900));
+      --fs-secondary-header: var(var(--fs-800));
+      --fs-head-info: var(--fs-600);
+      --fs-navigation: var(var(--fs-200));
+    }
+  
+    --fw-lighter: 400;
+    --fw-regular: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+  
+    --size-100: 0.5em;
+    --size-200: 1em;
+    --size-300: 1.5em;
+    --size-400: 2em;
+    --size-500: 2.5em;
+    --size-600: 3em;
+    --size-700: 4em;
+    --size-800: 6em;
+    --size-900: 7em;
+    --size-xl: 9em;
+  }
