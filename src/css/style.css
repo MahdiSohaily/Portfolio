@@ -140,7 +140,7 @@ select {
 }
 
 .wrapper {
-  max-width: min(1200px,92%);
+  max-width: min(1200px, 92%);
   margin: auto;
 }
 
@@ -263,6 +263,10 @@ nav {
   padding-block: var(--size-200);
 }
 
+.card img {
+  order: 1;
+}
+
 .social-media li a img {
   height: 15px;
 }
@@ -286,10 +290,6 @@ nav {
   padding: var(--size-300);
 }
 
-.card  img{
-  order: 1;
-}
-
 .card:hover {
   cursor: pointer;
   border: 2px solid var(--medium-purple);
@@ -309,6 +309,7 @@ nav {
 
 .counter {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--size-100);
   margin-top: var(--size-200);
@@ -345,7 +346,7 @@ nav {
     flex-direction: row;
   }
 
-  .card img{
+  .card img {
     order: unset;
   }
 
