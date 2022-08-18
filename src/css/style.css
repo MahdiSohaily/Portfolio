@@ -282,6 +282,10 @@ nav {
   padding: var(--size-300);
 }
 
+.card  img{
+  order: 1;
+}
+
 .card:hover {
   cursor: pointer;
   border: 2px solid var(--medium-purple);
@@ -295,6 +299,7 @@ nav {
 }
 
 .description {
+  order: 2;
   padding: var(--size-300);
 }
 
@@ -334,5 +339,13 @@ nav {
 @media screen and (min-width: 40em) {
   .card {
     flex-direction: row;
+  }
+
+  .card img{
+    order: unset;
+  }
+
+  .description {
+    order: unset;
   }
 }
