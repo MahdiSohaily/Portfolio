@@ -315,11 +315,13 @@ nav {
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--size-200);
   margin-block: var(--size-400);
 }
 
 .tag-item {
+  font-size: 12px;
   color: var(--dark-purple);
   background-color: var(--very-light-purple);
   padding: 4px 12px 4px 12px;
