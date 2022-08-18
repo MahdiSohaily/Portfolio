@@ -3,24 +3,18 @@
   --light-purple: hsl(235, 100%, 83%);
   --medium-purple: hsl(234, 100%, 75%);
   --dark-purple: hsl(234, 100%, 69%);
-
   --color-border: hsl(218, 13%, 48%);
   --color-icon: hsl(218, 20%, 39%);
   --color-nav-p: hsl(218, 31%, 30%);
-
   --color-heading-mobile: hsl(218, 54%, 20%);
   --color-heading-desktop: hsl(218, 76%, 15%);
-
   --light-blue: hsl(234, 97%, 62%);
   --bright-blue: hsl(235, 72%, 48%);
-
   --color-white: hsl(0, 0%, 100%);
   --bg-body: hsl(0, 0%, 90%);
-
   --color-light-gray: hsl(217, 13%, 74%);
   --color-smoke-white: hsl(240, 100%, 96%);
   --color-semi-white: hsl(218, 14%, 89%);
-
   --fs-tiny: 0.75em;
   --fs-100: 0.8215em;
   --fs-200: 0.9375em;
@@ -39,7 +33,6 @@
   --fw-regular: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
-
   --size-100: 0.5em;
   --size-200: 1em;
   --size-300: 1.5em;
@@ -135,6 +128,7 @@ header {
   width: 100%;
   background-color: var(--color-white);
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -165,12 +159,14 @@ nav {
     display: flex;
     gap: var(--size-300);
   }
+
   .mobile-menu {
     display: none;
   }
 }
 
 /* main content section */
+
 /* 1.landing-section */
 .landing-section {
   display: flex;
@@ -178,7 +174,8 @@ nav {
   justify-content: center;
   align-items: center;
   min-height: 85vh;
-  background: url("../images/header-shap-mobile.svg"),
+  background:
+    url("../images/header-shap-mobile.svg"),
     url("../images/header-mobile.png");
   background-repeat: no-repeat;
   background-size: contain, cover;
@@ -193,7 +190,8 @@ nav {
     align-items: center;
     min-height: 800px;
     padding-bottom: var(--size-500);
-    background: url("../images/header-shap-desktop.svg"),
+    background:
+      url("../images/header-shap-desktop.svg"),
       url("../images/header-desktop.png");
     background-repeat: no-repeat;
     background-size: contain, cover;
@@ -220,15 +218,16 @@ nav {
   padding-block: var(--size-200);
   line-height: 28px;
 }
-.connect{
-    text-transform: uppercase;
-    font-weight: var(--fw-regular);
-    font-size: var(300);
-    color: var(--medium-purple);
+
+.connect {
+  text-transform: uppercase;
+  font-weight: var(--fw-regular);
+  font-size: var(300);
+  color: var(--medium-purple);
 }
 
 .social-media {
-    padding-block: var(--size-200);
+  padding-block: var(--size-200);
 }
 
 @media screen and (min-width: 40em) {
@@ -236,6 +235,7 @@ nav {
     color: var(--color-heading-desktop);
     font-size: var(--fs-900);
   }
+
   .landing-intro {
     font-size: var(--fs-300);
     max-width: 73ch;
