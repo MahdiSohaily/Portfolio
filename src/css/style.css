@@ -295,7 +295,7 @@ nav {
 .card {
   display: flex;
   flex-direction: column;
-  gap: var(--size-300);
+  gap: var(--size-200);
   margin-block: var(--size-900);
   background-color: var(--color-white);
   border-radius: 24px;
@@ -318,7 +318,6 @@ nav {
 
 .description {
   order: 2;
-  padding: var(--size-300);
 }
 
 .counter {
@@ -327,14 +326,15 @@ nav {
   align-items: center;
   gap: var(--size-100);
   margin-top: var(--size-200);
-  margin-bottom: var(--size-500);
+  margin-bottom: var(--size-200);
 }
 
 .img-container, .description {
   flex: 50%;
 }
 
-.card img {
+.img-container > img {
+  height: 80%;
   object-fit: cover;
 }
 
@@ -343,7 +343,7 @@ nav {
 }
 
 .details {
-  font-size: 16px;
+  font-size: 15px;
   max-width: 50ch;
   color: var(--color-nav-p);
 }
@@ -374,6 +374,23 @@ nav {
 
   .description {
     order: unset;
+    padding: var(--size-300);
+  }
+
+  .counter {
+    margin-top: var(--size-200);
+    margin-bottom: var(--size-500);
+  }
+
+  .img-container > img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .details {
+    font-size: 16px;
+    max-width: 50ch;
+    color: var(--color-nav-p);
   }
 }
 
