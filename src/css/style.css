@@ -256,7 +256,7 @@ nav {
 
 .landing-intro {
   color: var(--color-nav-p);
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
   font-weight: var(--fw-lighter);
   padding-block: var(--size-200);
   line-height: 28px;
@@ -398,6 +398,8 @@ nav {
 .about-me {
   background-image: url('../images/about-bg-mobile.png');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
   padding-block: var(--size-900);
 }
 
