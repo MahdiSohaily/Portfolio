@@ -379,6 +379,15 @@ nav {
     margin-top: var(--size-200);
     margin-bottom: var(--size-400);
   }
+  .counter > li > p {
+    font-size: 18px;
+    color: var(--color-icon);
+  }
+
+  .active{
+    font-weight: var(--fw-regular);
+    color: var(--color-nav-p);
+  }
 
   .img-container > img {
     height: 100%;
