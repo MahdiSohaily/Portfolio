@@ -379,12 +379,13 @@ nav {
     margin-top: var(--size-200);
     margin-bottom: var(--size-400);
   }
+
   .counter > li > p {
     font-size: 18px;
     color: var(--color-icon);
   }
 
-  .active{
+  .active {
     font-weight: var(--fw-regular);
     color: var(--color-nav-p);
   }
@@ -441,6 +442,11 @@ nav {
   padding-block: var(--size-300);
 }
 
+.about-me .social-media {
+  margin-block: var(--size-100);
+}
+
+/* skills part design */
 .skills-name {
   display: flex;
   font-size: 20px;
@@ -448,17 +454,15 @@ nav {
   justify-content: space-between;
   padding-inline: var(--size-200);
   padding-block: var(--size-100);
-  border-bottom: 2px solid #DFE1E6;
-}
-
-.open{
-  border-bottom: none;
+  border-bottom: 2px solid #dfe1e6;
 }
 
 .skills-box {
   display: flex;
   flex-direction: column;
   gap: var(--size-100);
+  padding: var(--size-200);
+  border: 2px solid var(--color-nav-p);
 }
 
 .close {
@@ -470,7 +474,7 @@ nav {
   align-items: center;
   gap: var(--size-200);
   padding: var(--size-100);
-  background-color:  #F7F7F9;
+  background-color: #f7f7f9;
   border-radius: 8px;
 }
 
@@ -489,8 +493,10 @@ nav {
 
   .skills-box {
     flex-direction: row;
-    padding-block: var(--size-500);
+    padding-block: 1.5em;
+    padding-inline: 0;
   }
+
   .skill-item {
     flex-direction: column;
     gap: var(--size-200);
@@ -507,4 +513,3 @@ nav {
 }
 
 /* footer section */
-
