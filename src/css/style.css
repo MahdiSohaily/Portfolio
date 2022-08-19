@@ -368,3 +368,38 @@ nav {
     order: unset;
   }
 }
+
+/* About Me section Styles */
+.about-me {
+  background-image: url('../images/about-bg-mobile.png');
+  padding-block: var(--size-900);
+}
+.about-me-flex {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-300);
+}
+
+.exception-header {
+  font-size: var(--fs-800);
+}
+
+.about-desc {
+  color: var(--color-nav-p);
+  max-width: 45ch;
+  padding-block: var(--size-300);
+}
+
+@media screen and (min-width: 40em) {
+  .about-me {
+    flex-direction: row;
+    background-image: url('../images/about-bg-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+
+  .about-me-flex {
+    flex-direction: row;
+  }
+}
