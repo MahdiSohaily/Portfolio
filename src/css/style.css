@@ -169,8 +169,24 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding-block: var(--size-300);
+}
+
+.cub{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #4053fc;
+}
+
+.cub a {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  color: var(--color-heading-desktop);
 }
 
 .logo {
