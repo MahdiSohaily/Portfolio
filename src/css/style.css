@@ -413,13 +413,22 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
-  padding-block: var(--size-900);
+  padding-top: var(--size-900);
+  padding-bottom: 20em;
 }
 
 .about-me-flex {
   display: flex;
   flex-direction: column;
   gap: var(--size-300);
+}
+
+.about-intro {
+  flex: 40%;
+}
+
+.skills {
+  flex: 60%;
 }
 
 .exception-header {
@@ -430,6 +439,39 @@ nav {
   color: var(--color-nav-p);
   max-width: 45ch;
   padding-block: var(--size-300);
+}
+
+.skills-name {
+  display: flex;
+  font-size: 20px;
+  font-weight: var(--fw-regular);
+  justify-content: space-between;
+  padding-inline: var(--size-200);
+  padding-block: var(--size-100);
+  border-bottom: 2px solid #DFE1E6;
+}
+
+.open{
+  border-bottom: none;
+}
+
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-100);
+}
+
+.close {
+  display: none;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: var(--size-200);
+  padding: var(--size-100);
+  background-color:  #F7F7F9;
+  border-radius: 8px;
 }
 
 @media screen and (min-width: 40em) {
@@ -444,4 +486,25 @@ nav {
   .about-me-flex {
     flex-direction: row;
   }
+
+  .skills-box {
+    flex-direction: row;
+    padding-block: var(--size-500);
+  }
+  .skill-item {
+    flex-direction: column;
+    gap: var(--size-200);
+    align-items: start;
+    justify-content: space-evenly;
+    flex-basis: 120px;
+    height: 120px;
+  }
+
+  .skill-item p {
+    font-size: 15px;
+    font-weight: var(--fw-regular);
+  }
 }
+
+/* footer section */
+
