@@ -296,7 +296,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: var(--size-200);
-  margin-block: var(--size-900);
+  margin-block: var(--size-600);
   background-color: var(--color-white);
   border-radius: 24px;
   border: 2px solid var(--card-border);
@@ -325,7 +325,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--size-100);
-  margin-top: var(--size-200);
+  margin-top: var(--size-100);
   margin-bottom: var(--size-200);
 }
 
@@ -351,8 +351,8 @@ nav {
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--size-200);
-  margin-block: var(--size-400);
+  gap: var(--size-100);
+  margin-block: var(--size-200);
 }
 
 .tag-item {
@@ -365,6 +365,7 @@ nav {
 
 @media screen and (min-width: 40em) {
   .card {
+    margin-block: var(--size-900);
     flex-direction: row;
   }
 
@@ -379,7 +380,7 @@ nav {
 
   .counter {
     margin-top: var(--size-200);
-    margin-bottom: var(--size-500);
+    margin-bottom: var(--size-400);
   }
 
   .img-container > img {
@@ -391,6 +392,12 @@ nav {
     font-size: 16px;
     max-width: 50ch;
     color: var(--color-nav-p);
+  }
+
+  .tags {
+    gap: var(--size-200);
+    margin-top: var(--size-300);
+    margin-bottom: var(--size-500);
   }
 }
 
