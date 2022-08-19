@@ -280,10 +280,6 @@ nav {
   order: 1;
 }
 
-.social-media li a img {
-  height: 18px;
-}
-
 @media screen and (min-width: 40em) {
   .landing-intro {
     font-size: var(--fs-300);
@@ -329,7 +325,8 @@ nav {
   margin-bottom: var(--size-200);
 }
 
-.img-container, .description {
+.img-container,
+.description {
   flex: 50%;
 }
 
