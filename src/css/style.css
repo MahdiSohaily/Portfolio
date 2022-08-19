@@ -270,7 +270,7 @@ nav {
 
 .social-media {
   display: flex;
-  gap: var(--size-100);
+  gap: var(--size-300);
   align-items: baseline;
   padding-block: var(--size-200);
 }
@@ -280,7 +280,7 @@ nav {
 }
 
 .social-media li a img {
-  height: 15px;
+  height: 18px;
 }
 
 @media screen and (min-width: 40em) {
