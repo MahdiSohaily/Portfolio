@@ -330,13 +330,13 @@ nav {
   margin-bottom: var(--size-500);
 }
 
-.card img , .description {
+.img-container, .description {
   flex: 50%;
 }
 
-/* .card img {
+.card img {
   object-fit: cover;
-} */
+}
 
 .counter li p {
   font-size: 13px;
