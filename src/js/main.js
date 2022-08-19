@@ -1,0 +1,9 @@
+let header = document.querySelector('header');
+
+window.addEventListener("scroll",()=> {
+    if(window.scrollY > 600){
+      header.style.boxShadow= "0 1px 4px  hsl(218, 13%, 48%)";
+    } else {
+        header.style.boxShadow= "none";
+    }
+})
