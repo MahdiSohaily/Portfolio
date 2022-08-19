@@ -152,7 +152,7 @@ select {
   border: 1px solid var(--dark-purple);
   padding: 8px 12px;
   border-radius: 6px;
-  transition: 0.2s ease-in-out
+  transition: 0.2s ease-in-out;
 }
 
 /* general styles */
@@ -374,6 +374,7 @@ nav {
   background-image: url('../images/about-bg-mobile.png');
   padding-block: var(--size-900);
 }
+
 .about-me-flex {
   display: flex;
   flex-direction: column;
