@@ -152,6 +152,7 @@ select {
   border: 1px solid var(--dark-purple);
   padding: 8px 12px;
   border-radius: 6px;
+  transition: 0.2s ease-in-out
 }
 
 /* general styles */
@@ -300,6 +301,7 @@ nav {
   border-radius: 24px;
   border: 2px solid var(--card-border);
   padding: var(--size-300);
+  transition: 0.2s ease-in-out;
 }
 
 .card:hover {
