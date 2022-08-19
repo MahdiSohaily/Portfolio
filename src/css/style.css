@@ -144,10 +144,6 @@ select {
   margin: auto;
 }
 
-.padding-inline-300 {
-  padding-inline: var(--size-300);
-}
-
 .btn {
   font-size: 17px;
   font-weight: var(--fw-regular);
