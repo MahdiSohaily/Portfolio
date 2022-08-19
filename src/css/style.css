@@ -330,6 +330,14 @@ nav {
   margin-bottom: var(--size-500);
 }
 
+.card img , .description {
+  flex: 50%;
+}
+
+/* .card img {
+  object-fit: cover;
+} */
+
 .counter li p {
   font-size: 13px;
 }
@@ -372,6 +380,7 @@ nav {
 /* About Me section Styles */
 .about-me {
   background-image: url('../images/about-bg-mobile.png');
+  background-repeat: no-repeat;
   padding-block: var(--size-900);
 }
 
