@@ -411,7 +411,7 @@ nav {
 
 /* About Me section Styles */
 .about-me {
-  background-image: url('../images/about-bg-mobile.png');
+  background-image: url("../images/about-bg-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -481,7 +481,7 @@ nav {
 @media screen and (min-width: 40em) {
   .about-me {
     flex-direction: row;
-    background-image: url('../images/about-bg-desktop.png');
+    background-image: url("../images/about-bg-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -548,20 +548,20 @@ footer {
 }
 
 .contact-form {
- display: flex;
- flex-direction: column;
- justify-content: center;
- gap: 1em;
- padding-inline: 1em;
- margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  padding-inline: 1em;
+  margin-top: 2em;
 }
 
 .contact-form input,
 textarea {
- padding: 0.5em;
+  padding: 0.5em;
 }
 
-.contact-form  ::placeholder {
+.contact-form ::placeholder {
   font-size: 0.9em;
   color: var(--color-light-gray);
 }
@@ -571,10 +571,10 @@ textarea {
   outline: none;
 }
 
-.contact-button{
- display: inline-block;
- width: 140px;
- margin-left: 0;
+.contact-button {
+  display: inline-block;
+  width: 140px;
+  margin-left: 0;
 }
 
 @media screen and (min-width: 40em) {
@@ -584,9 +584,9 @@ textarea {
     justify-content: center;
     gap: 1em;
     padding-inline: 4.5em;
-   }
+  }
 
-   .contact-button{
+  .contact-button {
     margin-inline: auto;
-   }
+  }
 }
