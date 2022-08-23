@@ -532,7 +532,6 @@ footer {
 
 @media screen and (min-width: 40em) {
   .footer-form {
-    
   }
 }
 
@@ -547,3 +546,15 @@ footer {
   margin-block: 1em;
 }
 
+.contact-form {
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 1em;
+ padding-inline: 4em;
+}
+
+.contact-form input {
+ padding: 0.8em;
+
+}
