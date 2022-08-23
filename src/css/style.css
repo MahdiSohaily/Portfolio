@@ -523,13 +523,27 @@ footer {
 }
 
 .footer-form {
-  background-image: url("../images/footer-contact-mobile.png");
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-block: 6em;
+  flex-direction: column;
+  max-width: min(600px);
 }
 
 @media screen and (min-width: 40em) {
   .footer-form {
-    background-image: url("../images/footer-contact-shape.png");
-    background-size: cover;
+    
   }
 }
+
+.text-white {
+  color: #fff;
+  text-align: center;
+}
+
+.p-size {
+  max-width: 45ch;
+  margin: auto;
+  margin-block: 1em;
+}
+
