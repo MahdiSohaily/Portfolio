@@ -415,7 +415,7 @@ nav {
   background-size: cover;
   background-position: top left;
   padding-top: var(--size-900);
-  padding-bottom: 20em;
+  padding-bottom: 15em;
 }
 
 .about-me-flex {
@@ -511,4 +511,12 @@ nav {
   }
 }
 
-/* footer section */
+/* footer section styles */
+footer {
+  position: relative;
+  top: -120px;
+  background: url("../images/footer-shap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 10em;
+}
