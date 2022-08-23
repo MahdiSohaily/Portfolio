@@ -547,7 +547,7 @@ footer {
 }
 
 .contact-form {
- display:flex;
+ display: flex;
  flex-direction: column;
  justify-content: center;
  gap: 1em;
@@ -557,4 +557,9 @@ footer {
 .contact-form input {
  padding: 0.8em;
 
+}
+
+.contact-button{
+ display: inline-block;
+ width: 140px;
 }
