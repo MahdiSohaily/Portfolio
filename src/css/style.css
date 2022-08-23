@@ -524,12 +524,12 @@ footer {
 
 .footer-form {
   background-image: url("../images/footer-contact-mobile.png");
-  background-size:cover;
+  background-size: cover;
 }
 
 @media screen and (min-width: 40em) {
   .footer-form {
     background-image: url("../images/footer-contact-shape.png");
-    background-size:cover;
+    background-size: cover;
   }
 }
