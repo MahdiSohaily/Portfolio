@@ -161,6 +161,7 @@ header {
   top: 0;
   width: 100%;
   background-color: var(--color-white);
+  z-index: 2;
 }
 
 nav {
@@ -518,11 +519,17 @@ footer {
   background: url("../images/footer-shap.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-block: 10em;
+  z-index: 1;
 }
 
 .footer-form {
-  background-image: url("../images/footer-contact-shape.png");
+  background-image: url("../images/footer-contact-mobile.png");
   background-size:cover;
-  padding-block: 10em;
+}
+
+@media screen and (min-width: 40em) {
+  .footer-form {
+    background-image: url("../images/footer-contact-shape.png");
+    background-size:cover;
+  }
 }
