@@ -520,3 +520,9 @@ footer {
   background-size: cover;
   padding-block: 10em;
 }
+
+.footer-form {
+  background-image: url("../images/footer-contact-shape.png");
+  background-size:cover;
+  padding-block: 10em;
+}
