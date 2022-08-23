@@ -462,7 +462,6 @@ nav {
   flex-direction: column;
   gap: var(--size-100);
   padding: var(--size-200);
-  border: 2px solid var(--color-nav-p);
 }
 
 .close {
