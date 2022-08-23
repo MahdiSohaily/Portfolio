@@ -515,6 +515,11 @@ nav {
 /* footer section styles */
 footer {
   position: relative;
+}
+
+.re-position {
+  position: absolute;
+  width: 100%;
   top: -120px;
   background: url("../images/footer-shap.png");
   background-repeat: no-repeat;
@@ -530,20 +535,16 @@ footer {
   max-width: min(600px);
 }
 
-@media screen and (min-width: 40em) {
-  .footer-form {
-  }
-}
-
 .text-white {
   color: #fff;
   text-align: center;
 }
 
 .p-size {
+  font-size: 20px;
   max-width: 45ch;
   margin: auto;
-  margin-block: 1em;
+  padding-inline: 1.4em;
 }
 
 .contact-form {
@@ -551,15 +552,41 @@ footer {
  flex-direction: column;
  justify-content: center;
  gap: 1em;
- padding-inline: 4em;
+ padding-inline: 1em;
+ margin-top: 2em;
 }
 
-.contact-form input {
- padding: 0.8em;
+.contact-form input,
+textarea {
+ padding: 0.5em;
+}
 
+.contact-form  ::placeholder {
+  font-size: 0.9em;
+  color: var(--color-light-gray);
+}
+
+.contact-form input:is(:focus),
+textarea {
+  outline: none;
 }
 
 .contact-button{
  display: inline-block;
  width: 140px;
+ margin-left: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding-inline: 4.5em;
+   }
+
+   .contact-button{
+    margin-inline: auto;
+   }
 }
