@@ -155,12 +155,24 @@ select {
   transition: 0.2s ease-in-out;
 }
 
+.btn:hover {
+  background-color: hsl(234, 100%, 69%);
+  border: 1px solid white;
+  color: var(--color-white);
+}
+
+.btn:focus {
+  background-color: hsl(235, 72%, 48%);
+  color: var(--color-white);
+}
+
 /* general styles */
 header {
   position: sticky;
   top: 0;
   width: 100%;
   background-color: var(--color-white);
+  z-index: 2;
 }
 
 nav {
@@ -410,12 +422,12 @@ nav {
 
 /* About Me section Styles */
 .about-me {
-  background-image: url('../images/about-bg-mobile.png');
+  background-image: url("../images/about-bg-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
   padding-top: var(--size-900);
-  padding-bottom: 20em;
+  padding-bottom: 15em;
 }
 
 .about-me-flex {
@@ -480,7 +492,7 @@ nav {
 @media screen and (min-width: 40em) {
   .about-me {
     flex-direction: row;
-    background-image: url('../images/about-bg-desktop.png');
+    background-image: url("../images/about-bg-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -511,4 +523,102 @@ nav {
   }
 }
 
-/* footer section */
+/* footer section styles */
+footer {
+  position: relative;
+}
+
+.re-position {
+  margin-block: 30px;
+  position: absolute;
+  width: 100%;
+  top: -120px;
+  background: url("../images/footer-shap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  padding-block: 6em;
+  margin-block: 20px;
+}
+
+.text-white {
+  color: #fff;
+  text-align: center;
+}
+
+.p-size {
+  font-size: 20px;
+  max-width: 47ch;
+  margin: auto;
+  padding-inline: 1.4em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1.4em;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.contact-form input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.contact-form ::placeholder {
+  font-size: 0.9em;
+  color: var(--color-light-gray);
+}
+
+.contact-form input:is(:focus),
+textarea {
+  outline: none;
+}
+
+.contact-button {
+  display: inline-block;
+  width: 140px;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .contact-form {
+    width: 100%;
+    max-width: 430px;
+  }
+
+  .contact-button {
+    margin-inline: auto;
+  }
+
+  .re-position {
+    margin-block: 30px;
+    position: absolute;
+    width: 100%;
+    top: -150px;
+    background: url("../images/footer-shap.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+  }
+
+  .footer-form {
+    background: url("../images/footer-contact-shape.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+  }
+}

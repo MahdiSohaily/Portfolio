@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="./src/images/twitter.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Author: Mahdi Rezaei, This is my personal portfolio website">
-  <meta name="theme-color" content="#6070FF"/>
+  <meta name="theme-color" content="#6070FF" />
   <title>Mahdi Rezaei | Portfolio</title>
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -254,7 +254,7 @@
             <div class="accordian-item">
               <div class="skills-name open">
                 <p>Languages</p>
-              <img width="15" height="15" src="./src/images/arrow-down.svg" alt="arrow-down">
+                <img width="15" height="15" src="./src/images/arrow-down.svg" alt="arrow-down">
               </div>
               <div class="skills-box">
                 <div class="skill-item">
@@ -274,7 +274,7 @@
             <div class="accordian-item">
               <div class="skills-name">
                 <p>Frameworks</p>
-              <img width="15" height="15" src="./src/images/arrow-down.svg" alt="arrow-down">
+                <img width="15" height="15" src="./src/images/arrow-down.svg" alt="arrow-down">
               </div>
               <div class="skills-box close">
               </div>
@@ -282,7 +282,7 @@
             <div class="accordian-item">
               <div class="skills-name">
                 <p>Skills</p>
-              <img width="15" height="15" src="./src/images/arrow-down.svg" alt="arrow-down">
+                <img width="15" height="15" src="./src/images/arrow-down.svg" alt="arrow-down">
               </div>
               <div class="skills-box close">
               </div>
@@ -295,7 +295,23 @@
   </main>
   <!-- End Main content Section -->
   <!-- Start footer section -->
-  <footer></footer>
+  <footer>
+    <div class="re-position">
+      <section class="wrapper footer-form">
+        <h2 class="secondary-header exception-header text-white">Contact me</h2>
+        <p class="text-white p-size">If you have an application you are interested in developing, a feature that you need
+          built or a project that
+          needs coding. I’d love to help with it </p>
+  
+        <form action="https://formspree.io/f/xdojkeey" method="POST" class="contact-form">
+          <input type="text" name="full-name" maxlength="30" placeholder="Insert your Full Name" required>
+          <input type="email" name="email" placeholder="Insert your Email" required>
+          <textarea name="message" maxlength="500" placeholder="Write your message here" rows="7" required></textarea>
+          <button type="submit" class="btn contact-button">Get in touch</button>
+        </form>
+      </section>
+    </div>
+  </footer>
   <!-- End Footer Section -->
 </body>
 

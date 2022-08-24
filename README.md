@@ -39,6 +39,14 @@ Open index.html file
 - GitHub: [@MahdiSohaily](https://github.com/MahdiSohaily)
 - Twitter: [@Mahdi_Rezaei_AF](https://twitter.com/Mahdi_Rezaei_AF)
 
+👤 **Diego Garcia**
+
+- GitHub: [@Diego Garcia](https://github.com/taldr27)
+
+👤 **Cesar Alberto**
+
+- GitHub: [@Cesar Alberto](https://github.com/cvalencia1991)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
