@@ -518,6 +518,7 @@ footer {
 }
 
 .re-position {
+  margin-block: 30px;
   position: absolute;
   width: 100%;
   top: -120px;
@@ -529,10 +530,13 @@ footer {
 
 .footer-form {
   display: flex;
-  justify-content: center;
-  padding-block: 6em;
   flex-direction: column;
-  max-width: min(600px);
+  background: url("../images/footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  padding-block: 6em;
+  margin-block: 20px;
 }
 
 .text-white {
@@ -542,7 +546,7 @@ footer {
 
 .p-size {
   font-size: 20px;
-  max-width: 45ch;
+  max-width: 47ch;
   margin: auto;
   padding-inline: 1.4em;
 }
@@ -552,12 +556,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   gap: 1em;
-  padding-inline: 1em;
-  margin-top: 2em;
+  margin-top: 1.4em;
+  max-width: 600px;
+  margin-inline: auto;
 }
 
 .contact-form input,
 textarea {
+  width: 100%;
   padding: 0.5em;
 }
 
@@ -579,14 +585,31 @@ textarea {
 
 @media screen and (min-width: 40em) {
   .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1em;
-    padding-inline: 4.5em;
+    width: 100%;
+    max-width: 430px;
   }
 
   .contact-button {
     margin-inline: auto;
+  }
+
+  .re-position {
+    margin-block: 30px;
+    position: absolute;
+    width: 100%;
+    top: -120px;
+    background: url("../images/footer-shap.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .footer-form {
+    background: url("../images/footer-contact-shape.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
   }
 }
