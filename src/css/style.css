@@ -536,7 +536,6 @@ footer {
   background: url("../images/footer-shap.png");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 1;
 }
 
 .footer-form {
@@ -608,12 +607,11 @@ textarea {
     margin-block: 30px;
     position: absolute;
     width: 100%;
-    top: -120px;
+    top: -150px;
     background: url("../images/footer-shap.png");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;
-    z-index: 1;
   }
 
   .footer-form {
