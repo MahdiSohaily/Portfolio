@@ -596,11 +596,16 @@ footer {
 textarea {
   width: 100%;
   padding: 0.5em;
+  transition: border 1s ease-in-out;
 }
+
 
 .contact-form ::placeholder {
   font-size: 0.9em;
   color: var(--color-light-gray);
+}
+.contact-form input:is(:focus){
+  border: 2px solid black;
 }
 
 .contact-form input:is(:focus),
