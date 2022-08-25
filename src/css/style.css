@@ -83,12 +83,11 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
