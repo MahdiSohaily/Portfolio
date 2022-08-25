@@ -174,14 +174,26 @@ nav {
   padding-block: var(--size-300);
 }
 
+.area {
+  position: relative;
+}
+
 .cub {
   position: relative;
   width: 40px;
   height: 40px;
   background-color: #4053fc;
+  animation: rotateLog 2s ease-in-out;
+  animation-delay: 1s;
 }
 
-.cub a {
+@keyframes rotateLog {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+
+}
+
+.area a {
   width: 300px;
   position: absolute;
   top: 50%;
