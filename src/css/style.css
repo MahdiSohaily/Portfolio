@@ -313,7 +313,24 @@ nav {
   border-radius: 24px;
   border: 2px solid var(--card-border);
   padding: var(--size-300);
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover .overlay {
+  display: block;
+}
+
+.img-container {
+  position: relative;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.1;
+  border-radius: 8px;
 }
 
 .card:hover {
