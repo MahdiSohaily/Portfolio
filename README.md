@@ -39,14 +39,6 @@ Open index.html file
 - GitHub: [@MahdiSohaily](https://github.com/MahdiSohaily)
 - Twitter: [@Mahdi_Rezaei_AF](https://twitter.com/Mahdi_Rezaei_AF)
 
-👤 **Diego Garcia**
-
-- GitHub: [@Diego Garcia](https://github.com/taldr27)
-
-👤 **Cesar Alberto**
-
-- GitHub: [@Cesar Alberto](https://github.com/cvalencia1991)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -66,5 +58,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._

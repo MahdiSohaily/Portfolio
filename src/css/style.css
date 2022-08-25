@@ -90,14 +90,6 @@ picture {
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -128,7 +120,7 @@ select {
   font-weight: var(--fw-bold);
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
   .primary-header {
     color: var(--color-heading-desktop);
     font-size: var(--fs-900);
@@ -216,7 +208,7 @@ nav {
   text-decoration: none;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
   .main-nav {
     display: flex;
     gap: var(--size-300);
@@ -244,7 +236,7 @@ nav {
   background-position: center, bottom left;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
   .landing-section {
     display: flex;
     flex-direction: column;
@@ -292,7 +284,7 @@ nav {
   order: 1;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
   .landing-intro {
     font-size: var(--fs-300);
     max-width: 73ch;
@@ -372,7 +364,7 @@ nav {
   border-radius: 8px;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
   .card {
     margin-block: var(--size-900);
     flex-direction: row;
@@ -489,7 +481,7 @@ nav {
   border-radius: 8px;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
   .about-me {
     flex-direction: row;
     background-image: url("../images/about-bg-desktop.png");
@@ -593,7 +585,7 @@ textarea {
   margin-left: 0;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 48em) {
   .contact-form {
     width: 100%;
     max-width: 430px;
