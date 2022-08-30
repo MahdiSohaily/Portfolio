@@ -27,7 +27,7 @@
   --fs-900: 3em;
 
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 
   --fw-lighter: 400;
   --fw-regular: 500;
@@ -111,12 +111,12 @@ picture {
   color: var(--color-heading-mobile);
   font-weight: var(--fw-bold);
   font-size: var(--fs-800);
-  line-height: 60px;
+  line-height: 3.75rem;
 }
 
 .secondary-header {
   color: var(--color-heading-desktop);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: var(--fw-bold);
 }
 
@@ -127,7 +127,7 @@ picture {
   }
 
   .secondary-header {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
@@ -137,7 +137,7 @@ picture {
 }
 
 .btn {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: var(--fw-regular);
   color: hsl(223, 63%, 50%);
   background-color: var(--color-white);
@@ -180,8 +180,8 @@ nav {
 
 .cub {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: #4053fc;
   animation: rotateLog 2s ease-in-out;
   animation-delay: 1s;
@@ -275,7 +275,7 @@ nav {
   font-size: var(--fs-200);
   font-weight: var(--fw-lighter);
   padding-block: var(--size-200);
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 .connect {
@@ -310,7 +310,7 @@ nav {
   gap: var(--size-200);
   margin-block: var(--size-600);
   background-color: var(--color-white);
-  border-radius: 24px;
+  border-radius: 1.5rem;
   border: 2px solid var(--card-border);
   padding: var(--size-300);
   transition: 0.5s ease-in-out;
@@ -369,11 +369,11 @@ nav {
 }
 
 .counter li p {
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .details {
-  font-size: 15px;
+  font-size: 0.9375rem;
   max-width: 50ch;
   color: var(--color-nav-p);
 }
@@ -386,7 +386,7 @@ nav {
 }
 
 .tag-item {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--light-blue);
   background-color: var(--very-light-purple);
   padding: 4px 12px 4px 12px;
@@ -414,7 +414,7 @@ nav {
   }
 
   .counter > li > p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--color-icon);
   }
 
@@ -429,7 +429,7 @@ nav {
   }
 
   .details {
-    font-size: 16px;
+    font-size: 1rem;
     max-width: 50ch;
     color: var(--color-nav-p);
   }
@@ -482,7 +482,7 @@ nav {
 /* skills part design */
 .skills-name {
   display: flex;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: var(--fw-regular);
   justify-content: space-between;
   padding-inline: var(--size-200);
@@ -539,7 +539,7 @@ nav {
   }
 
   .skill-item p {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: var(--fw-regular);
   }
 }
@@ -576,7 +576,7 @@ footer {
 }
 
 .p-size {
-  font-size: 20px;
+  font-size: 1.25rem;
   max-width: 47ch;
   margin: auto;
   padding-inline: 1.4em;
