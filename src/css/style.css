@@ -188,9 +188,13 @@ nav {
 }
 
 @keyframes rotateLog {
-  0%{transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
 
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .area a {
@@ -316,10 +320,6 @@ nav {
   transition: 0.5s ease-in-out;
 }
 
-.card:hover .overlay {
-  display: block;
-}
-
 .img-container {
   position: relative;
 }
@@ -331,6 +331,10 @@ nav {
   background-color: black;
   opacity: 0.1;
   border-radius: 8px;
+}
+
+.card:hover .overlay {
+  display: block;
 }
 
 .card:hover {
@@ -599,12 +603,12 @@ textarea {
   transition: border 1s ease-in-out;
 }
 
-
 .contact-form ::placeholder {
   font-size: 0.9em;
   color: var(--color-light-gray);
 }
-.contact-form input:is(:focus){
+
+.contact-form input:is(:focus) {
   border: 2px solid black;
 }
 
