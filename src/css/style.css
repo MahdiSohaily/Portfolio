@@ -174,14 +174,30 @@ nav {
   padding-block: var(--size-300);
 }
 
+.area {
+  position: relative;
+}
+
 .cub {
   position: relative;
   width: 40px;
   height: 40px;
   background-color: #4053fc;
+  animation: rotateLog 2s ease-in-out;
+  animation-delay: 1s;
 }
 
-.cub a {
+@keyframes rotateLog {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.area a {
   width: 300px;
   position: absolute;
   top: 50%;
@@ -301,7 +317,24 @@ nav {
   border-radius: 24px;
   border: 2px solid var(--card-border);
   padding: var(--size-300);
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.img-container {
+  position: relative;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.1;
+  border-radius: 8px;
+}
+
+.card:hover .overlay {
+  display: block;
 }
 
 .card:hover {
@@ -567,11 +600,16 @@ footer {
 textarea {
   width: 100%;
   padding: 0.5em;
+  transition: border 1s ease-in-out;
 }
 
 .contact-form ::placeholder {
   font-size: 0.9em;
   color: var(--color-light-gray);
+}
+
+.contact-form input:is(:focus) {
+  border: 2px solid black;
 }
 
 .contact-form input:is(:focus),
