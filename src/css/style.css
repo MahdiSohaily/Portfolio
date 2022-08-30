@@ -188,9 +188,13 @@ nav {
 }
 
 @keyframes rotateLog {
-  0%{transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
 
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .area a {
@@ -316,10 +320,6 @@ nav {
   transition: 0.5s ease-in-out;
 }
 
-.card:hover .overlay {
-  display: block;
-}
-
 .img-container {
   position: relative;
 }
@@ -337,6 +337,10 @@ nav {
   cursor: pointer;
   border: 2px solid var(--medium-purple);
   box-shadow: 0 1px 16px -6px var(--color-border);
+}
+
+.card:hover .overlay {
+  display: block;
 }
 
 .card:hover .btn {
