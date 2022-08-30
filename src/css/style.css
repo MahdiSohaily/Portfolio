@@ -66,8 +66,9 @@ ol {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
   scroll-behavior: smooth;
+  scroll-padding: 100px;
 }
 
 /* Set core body defaults */
