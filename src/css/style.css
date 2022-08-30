@@ -340,10 +340,6 @@ nav {
   box-shadow: 0 1px 16px -6px var(--color-border);
 }
 
-.card:hover .overlay {
-  display: block;
-}
-
 .card:hover .btn {
   color: var(--color-white);
   background-color: #4053fc;
