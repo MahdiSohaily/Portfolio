@@ -68,7 +68,7 @@ ol {
 /* Set core root defaults */
 html {
   scroll-behavior: smooth;
-  scroll-padding: 100px;
+  scroll-padding: 90px;
 }
 
 /* Set core body defaults */
