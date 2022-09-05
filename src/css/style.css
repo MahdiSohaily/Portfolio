@@ -215,7 +215,18 @@ nav {
   font-weight: var(--fw-bold);
 }
 
-.main-nav {
+.main-nav li a {
+  color: var(--color-white);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-regular);
+  text-decoration: none;
+}
+
+.mobile-menu {
+  z-index: 1000;
+}
+
+.open {
   display: block;
   position: fixed;
   top: 0;
@@ -226,17 +237,6 @@ nav {
   background-color: #4053fc;
   opacity: 0.9;
   transition: 0.5s ease-in-out;
-}
-
-.main-nav li a {
-  color: var(--color-white);
-  font-size: var(--fs-600);
-  font-weight: var(--fw-regular);
-  text-decoration: none;
-}
-
-.mobile-menu {
-  z-index: 1000;
 }
 
 @media screen and (min-width: 48em) {

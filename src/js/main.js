@@ -13,5 +13,11 @@ let mainNav = document.querySelector('.main-nav');
 
 navIcon.addEventListener('click', function(){
   mainNav.style.height= "100%";
-  navIcon.src = './src/images/close-icon.svg';
+  mainNav.classList.toggle("open");
+  if(mainNav.classList.contains('open')) {
+    navIcon.src = './src/images/close-icon.svg';
+  } else {
+    navIcon.src = './src/images/menu-icon.svg'
+  }
 })
+
