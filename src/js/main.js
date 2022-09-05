@@ -8,11 +8,10 @@ window.addEventListener("scroll",()=> {
     }
 })
 
-// let navIcon = document.querySelector('.mobile-menu');
-// let mainNav = document.querySelector('.main-nav');
+let navIcon = document.querySelector('.mobile-menu');
+let mainNav = document.querySelector('.main-nav');
 
-// navIcon.addEventListener('click', function(e){
-//   mainNav.style.height= "100%";
-//   navIcon.src = './src/images/close-icon.svg';
-//   alert(`bye`)
-// })
+navIcon.addEventListener('click', function(){
+  mainNav.style.height= "100%";
+  navIcon.src = './src/images/close-icon.svg';
+})
