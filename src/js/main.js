@@ -20,4 +20,3 @@ navIcon.addEventListener('click', function(){
     navIcon.src = './src/images/menu-icon.svg'
   }
 })
-
