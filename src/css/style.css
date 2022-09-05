@@ -199,7 +199,7 @@ nav {
 }
 
 .area a {
-  width: 300px;
+  width: 120px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -208,6 +208,7 @@ nav {
 }
 
 .logo {
+  display: inline-block;
   color: var(--dark-purple);
   text-decoration: none;
   font-size: var(--fs-500);
