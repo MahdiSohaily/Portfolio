@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
 const navIcon = document.querySelector('.mobile-menu');
 const mainNav = document.querySelector('.main-nav');
 
-navIcon.addEventListener('click', function () {
+navIcon.addEventListener('click', ()=> {
   mainNav.style.height = '100%';
   mainNav.classList.toggle('open');
   if (mainNav.classList.contains('open')) {
@@ -21,7 +21,7 @@ navIcon.addEventListener('click', function () {
   }
 });
 
-mainNav.addEventListener('click', function () {
+mainNav.addEventListener('click', ()=> {
   mainNav.classList.remove('open');
 });
 
