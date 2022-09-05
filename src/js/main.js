@@ -20,3 +20,7 @@ navIcon.addEventListener('click', function(){
     navIcon.src = './src/images/menu-icon.svg'
   }
 })
+
+mainNav.addEventListener('click',function(){
+  mainNav.classList.remove("open");
+});

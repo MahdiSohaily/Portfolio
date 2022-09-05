@@ -226,6 +226,10 @@ nav {
   z-index: 1000;
 }
 
+.main-nav {
+  display: none;
+}
+
 .open {
   display: block;
   position: fixed;
