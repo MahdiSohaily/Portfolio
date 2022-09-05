@@ -24,3 +24,7 @@ navIcon.addEventListener('click', function(){
 mainNav.addEventListener('click',function(){
   mainNav.classList.remove("open");
 });
+
+window.addEventListener("resize",()=> {
+  mainNav.classList.remove("open");
+})
