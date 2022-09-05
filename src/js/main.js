@@ -23,6 +23,7 @@ navIcon.addEventListener('click', () => {
 
 mainNav.addEventListener('click', () => {
   mainNav.classList.remove('open');
+  navIcon.src = './src/images/menu-icon.svg';
 });
 
 window.addEventListener('resize', () => {
