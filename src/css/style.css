@@ -216,20 +216,40 @@ nav {
 }
 
 .main-nav {
-  display: none;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  height: 0;
+  overflow: hidden;
+  background-color: #4053fc;
+  opacity: 0.9;
+  transition: 0.5s ease-in-out;
 }
 
 .main-nav li a {
-  color: var(--color-nav-p);
-  font-size: var(--fs-200);
+  color: var(--color-white);
+  font-size: var(--fs-600);
   font-weight: var(--fw-regular);
   text-decoration: none;
+}
+
+.mobile-menu {
+  z-index: 1000;
 }
 
 @media screen and (min-width: 48em) {
   .main-nav {
     display: flex;
     gap: var(--size-300);
+  }
+
+  .main-nav li a {
+    color: var(--color-nav-p);
+    font-size: var(--fs-200);
+    font-weight: var(--fw-regular);
+    text-decoration: none;
   }
 
   .mobile-menu {
