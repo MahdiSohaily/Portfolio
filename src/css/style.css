@@ -199,7 +199,7 @@ nav {
 }
 
 .area a {
-  width: 300px;
+  width: 120px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -208,27 +208,62 @@ nav {
 }
 
 .logo {
+  display: inline-block;
   color: var(--dark-purple);
   text-decoration: none;
   font-size: var(--fs-500);
   font-weight: var(--fw-bold);
 }
 
+.main-nav li a {
+  color: var(--color-white);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-regular);
+  text-decoration: none;
+}
+
+.mobile-menu {
+  z-index: 1000;
+}
+
 .main-nav {
   display: none;
 }
 
-.main-nav li a {
-  color: var(--color-nav-p);
-  font-size: var(--fs-200);
-  font-weight: var(--fw-regular);
-  text-decoration: none;
+.open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: #4053fc;
+  opacity: 0.9;
+  transition: 0.5s ease-in-out;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+.open li {
+  padding-block: 10px;
+}
+
+.open li a {
+  font-size: 32px;
 }
 
 @media screen and (min-width: 48em) {
   .main-nav {
     display: flex;
     gap: var(--size-300);
+  }
+
+  .main-nav li a {
+    color: var(--color-nav-p);
+    font-size: var(--fs-200);
+    font-weight: var(--fw-regular);
+    text-decoration: none;
   }
 
   .mobile-menu {

@@ -39,6 +39,10 @@ Open index.html file
 - GitHub: [@MahdiSohaily](https://github.com/MahdiSohaily)
 - Twitter: [@Mahdi_Rezaei_AF](https://twitter.com/Mahdi_Rezaei_AF)
 
+ **Oscar Fernández Muñoz**
+
+- GitHub: [@OscarFMdev](https://github.com/OscarFMdev)
+- Twitter: [@OscarFMdev](https://twitter.com/OscarFMdev)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
