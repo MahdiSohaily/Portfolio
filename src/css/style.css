@@ -754,7 +754,9 @@ textarea {
   padding-block: var(--size-300);
   font-size: 16px;
   color: var(--color-nav-p);
+  padding-top: 50px;
 }
+
 @media screen and (min-width: 40em) {
   .desc-box {
     flex-direction: row;
