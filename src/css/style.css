@@ -280,8 +280,7 @@ nav {
   justify-content: center;
   align-items: center;
   min-height: 85vh;
-  background:
-    url("../images/header-shap-mobile.svg"),
+  background: url("../images/header-shap-mobile.svg"),
     url("../images/header-mobile.png");
   background-repeat: no-repeat;
   background-size: contain, cover;
@@ -296,8 +295,7 @@ nav {
     align-items: center;
     min-height: 800px;
     padding-bottom: var(--size-500);
-    background:
-      url("../images/header-shap-desktop.svg"),
+    background: url("../images/header-shap-desktop.svg"),
       url("../images/header-desktop.png");
     background-repeat: no-repeat;
     background-size: contain, cover;
@@ -703,6 +701,7 @@ textarea {
 
 .modal-box {
   max-width: min(1200px, 90%);
+  height: 95vh;
   background-color: var(--color-white);
   border-radius: 8px;
   padding: var(--size-300);
@@ -722,31 +721,33 @@ textarea {
 }
 
 .img-container {
-  background-color: red;
-  max-width: min(600px, 90%);
+  max-width: min(600px, 95%);
   margin-inline: auto;
 }
 
 .img-container img {
-  width: 100%;
-  height: 500px;
+  width: 90%;
 }
 
 .desc-box {
   display: flex;
-  padding-block: var(--size-500);
+  flex-direction: column;
+  padding-block: var(--size-300);
   font-size: 16px;
   color: var(--color-nav-p);
 }
-
-.modal-desc {
-  flex: 70%;
-}
-.accessory {
-  flex: 30%;
+@media screen and (min-width: 40em) {
+  .desc-box {
+    flex-direction: row;
+  }
+  .modal-desc {
+    flex: 70%;
+  }
+  .accessory {
+    flex: 30%;
+  }
 }
 
 .img-btn {
-  display: flex;
-  gap: 10px;
+  font-size: 12px;
 }
