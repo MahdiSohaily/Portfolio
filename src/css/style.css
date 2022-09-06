@@ -757,6 +757,11 @@ textarea {
   padding-top: 50px;
 }
 
+.tags {
+  padding-bottom: 15px;
+  border-bottom: 0.1px solid rgba(128, 128, 128, 0.2) ;
+}
+
 @media screen and (min-width: 40em) {
   .desc-box {
     flex-direction: row;
