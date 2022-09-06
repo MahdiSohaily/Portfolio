@@ -1,37 +1,37 @@
-const header = document.querySelector("header");
-window.addEventListener("scroll", () => {
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
   if (window.scrollY > 600) {
-    header.style.boxShadow = "0 1px 4px  hsl(218, 13%, 48%)";
+    header.style.boxShadow = '0 1px 4px  hsl(218, 13%, 48%)';
   } else {
-    header.style.boxShadow = "none";
+    header.style.boxShadow = 'none';
   }
 });
 
-const navIcon = document.querySelector(".mobile-menu");
-const mainNav = document.querySelector(".main-nav");
+const navIcon = document.querySelector('.mobile-menu');
+const mainNav = document.querySelector('.main-nav');
 
-navIcon.addEventListener("click", () => {
-  mainNav.style.height = "100%";
-  mainNav.classList.toggle("open");
-  if (mainNav.classList.contains("open")) {
-    navIcon.src = "./src/images/close-icon.svg";
+navIcon.addEventListener('click', () => {
+  mainNav.style.height = '100%';
+  mainNav.classList.toggle('open');
+  if (mainNav.classList.contains('open')) {
+    navIcon.src = './src/images/close-icon.svg';
   } else {
-    navIcon.src = "./src/images/menu-icon.svg";
+    navIcon.src = './src/images/menu-icon.svg';
   }
 });
 
-mainNav.addEventListener("click", () => {
-  mainNav.classList.remove("open");
-  navIcon.src = "./src/images/menu-icon.svg";
+mainNav.addEventListener('click', () => {
+  mainNav.classList.remove('open');
+  navIcon.src = './src/images/menu-icon.svg';
 });
 
-window.addEventListener("resize", () => {
-  mainNav.classList.remove("open");
+window.addEventListener('resize', () => {
+  mainNav.classList.remove('open');
 });
 
 // Modal Script
 
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll('.card');
 const cardProp = [];
 
 function cardObject(
@@ -53,13 +53,13 @@ function cardObject(
 }
 
 for (let index = 0; index < cards.length; index++) {
-  let title = cards[index].querySelector(".secondary-header").innerText;
-  let timeline = cards[index].querySelector(".counter").innerHTML;
-  let picture = cards[index].querySelector(".img-container img").src;
-  let description = cards[index].querySelector(".details").innerText;
-  let technology = cards[index].querySelector(".tags").innerHTML;
-  let liveURL = "https://mahdisohaily.github.io/Portfolio/";
-  let sourceURL = "https://github.com/MahdiSohaily/Portfolio";
+  let title = cards[index].querySelector('.secondary-header').innerText;
+  let timeline = cards[index].querySelector('.counter').innerHTML;
+  let picture = cards[index].querySelector('.img-container img').src;
+  let description = cards[index].querySelector('.details').innerText;
+  let technology = cards[index].querySelector('.tags').innerHTML;
+  let liveURL = 'https://mahdisohaily.github.io/Portfolio/';
+  let sourceURL = 'https://github.com/MahdiSohaily/Portfolio';
 
   cardProp.push(
     new cardObject(
@@ -74,13 +74,13 @@ for (let index = 0; index < cards.length; index++) {
   );
 }
 
-const modalButton = document.querySelectorAll(".show");
-const modal = document.querySelector(".modal-container");
-const closeModal = document.getElementById("close-modal");
+const modalButton = document.querySelectorAll('.show');
+const modal = document.querySelector('.modal-container');
+const closeModal = document.getElementById('close-modal');
 for (let index = 0; index < modalButton.length; index++) {
-  modalButton[index].setAttribute("data-index", index);
-  modalButton[index].addEventListener("click", (e) => {
-    let pos = e.target.getAttribute("data-index");
+  modalButton[index].setAttribute('data-index', index);
+  modalButton[index].addEventListener('click', (e) => {
+    let pos = e.target.getAttribute('data-index');
     modal.querySelector('.modal-title').innerHTML = cardProp[pos].title;
     modal.querySelector('.timeline').innerHTML = cardProp[pos].timeline;
     modal.querySelector('.img-container img').src = cardProp[pos].picture;
@@ -88,10 +88,10 @@ for (let index = 0; index < modalButton.length; index++) {
     modal.querySelector('.tags').innerHTML = cardProp[pos].technology;
     modal.querySelector('.live').href = cardProp[pos].liveURL;
     modal.querySelector('.source').href = cardProp[pos].sourceURL;
-    modal.style.display = "block";
+    modal.style.display = 'block';
   });
 }
 
-closeModal.addEventListener("click", () => {
-  modal.style.display = "none";
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
 });

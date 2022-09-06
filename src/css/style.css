@@ -280,7 +280,8 @@ nav {
   justify-content: center;
   align-items: center;
   min-height: 85vh;
-  background: url("../images/header-shap-mobile.svg"),
+  background:
+    url("../images/header-shap-mobile.svg"),
     url("../images/header-mobile.png");
   background-repeat: no-repeat;
   background-size: contain, cover;
@@ -295,7 +296,8 @@ nav {
     align-items: center;
     min-height: 800px;
     padding-bottom: var(--size-500);
-    background: url("../images/header-shap-desktop.svg"),
+    background:
+      url("../images/header-shap-desktop.svg"),
       url("../images/header-desktop.png");
     background-repeat: no-repeat;
     background-size: contain, cover;
