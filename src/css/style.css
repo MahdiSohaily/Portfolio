@@ -713,7 +713,7 @@ textarea {
 .modal-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .modal-title {
@@ -767,9 +767,9 @@ textarea {
     flex-direction: row;
     gap: 20px;
   }
+
   .modal-desc {
     flex: 70%;
-    background-color: #20293f;
   }
   .accessory {
     flex: 30%;
