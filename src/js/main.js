@@ -34,7 +34,15 @@ window.addEventListener('resize', () => {
 const cards = document.querySelectorAll('.card');
 const cardProp = [];
 
-function CardObject(title, timeline, picture, description, technology, liveURL, sourceURL) {
+function CardObject(
+  title,
+  timeline,
+  picture,
+  description,
+  technology,
+  liveURL,
+  sourceURL,
+) {
   this.title = title;
   this.timeline = timeline;
   this.picture = picture;
@@ -53,7 +61,16 @@ for (let index = 0; index < cards.length; index += 1) {
   const liveURL = 'https://mahdisohaily.github.io/Portfolio/';
   const sourceURL = 'https://github.com/MahdiSohaily/Portfolio';
 
-  cardProp.push(new CardObject(title, timeline, picture, description, technology, liveURL, sourceURL)
+  cardProp.push(
+    new CardObject(
+      title,
+      timeline,
+      picture,
+      description,
+      technology,
+      liveURL,
+      sourceURL,
+    ),
   );
 }
 
