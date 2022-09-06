@@ -691,9 +691,10 @@ textarea {
 .modal-container {
   display: none;
 }
+
 .modal {
   position: fixed;
-  background-color: rgba(128, 128, 128, 0.504);
+  background-color: rgba(128, 128, 128, 0.9);
   inset: 0;
   z-index: 10000;
   display: flex;
