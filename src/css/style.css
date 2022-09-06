@@ -765,6 +765,7 @@ textarea {
 @media screen and (min-width: 40em) {
   .desc-box {
     flex-direction: row;
+    gap: 20px;
   }
   .modal-desc {
     flex: 70%;
