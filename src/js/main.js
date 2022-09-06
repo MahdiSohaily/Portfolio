@@ -45,13 +45,13 @@ function cardObject(title, timeline, picture, description, technology, liveURL, 
 }
 
 for (let index = 0; index < cards.length; index++) {
-  let title = cards[index].querySelector('.secondary-header').innerText;
-  let timeline = cards[index].querySelector('.counter').innerHTML;
-  let picture = cards[index].querySelector('.img-container img').src;
-  let description = cards[index].querySelector('.details').innerText;
-  let technology = cards[index].querySelector('.tags').innerHTML;
-  let liveURL = 'https://mahdisohaily.github.io/Portfolio/';
-  let sourceURL = 'https://github.com/MahdiSohaily/Portfolio';
+  const title = cards[index].querySelector('.secondary-header').innerText;
+  const timeline = cards[index].querySelector('.counter').innerHTML;
+  const picture = cards[index].querySelector('.img-container img').src;
+  const description = cards[index].querySelector('.details').innerText;
+  const technology = cards[index].querySelector('.tags').innerHTML;
+  const liveURL = 'https://mahdisohaily.github.io/Portfolio/';
+  const sourceURL = 'https://github.com/MahdiSohaily/Portfolio';
 
   cardProp.push(
     new cardObject(title, timeline, picture, description, technology, liveURL, sourceURL)
@@ -64,7 +64,7 @@ const closeModal = document.getElementById('close-modal');
 for (let index = 0; index < modalButton.length; index++) {
   modalButton[index].setAttribute('data-index', index);
   modalButton[index].addEventListener('click', (e) => {
-    let pos = e.target.getAttribute('data-index');
+    const pos = e.target.getAttribute('data-index');
     modal.querySelector('.modal-title').innerHTML = cardProp[pos].title;
     modal.querySelector('.timeline').innerHTML = cardProp[pos].timeline;
     modal.querySelector('.img-container img').src = cardProp[pos].picture;
@@ -72,7 +72,7 @@ for (let index = 0; index < modalButton.length; index++) {
     modal.querySelector('.tags').innerHTML = cardProp[pos].technology;
     modal.querySelector('.live').href = cardProp[pos].liveURL;
     modal.querySelector('.source').href = cardProp[pos].sourceURL;
-    modal.style.display = 'block';
+    modal.style.display = 'block',
   });
 }
 
