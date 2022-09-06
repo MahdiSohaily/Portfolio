@@ -732,6 +732,11 @@ textarea {
   margin-bottom: 20px;
 }
 
+.modal .timeline li {
+  display: flex;
+  align-items: center;
+}
+
 .img-container {
   max-width: min(600px, 95%);
   margin-inline: auto;
