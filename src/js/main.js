@@ -86,6 +86,8 @@ for (let index = 0; index < modalButton.length; index++) {
     modal.querySelector('.img-container img').src = cardProp[pos].picture;
     modal.querySelector('.modal-desc').innerHTML = cardProp[pos].description;
     modal.querySelector('.tags').innerHTML = cardProp[pos].technology;
+    modal.querySelector('.live').href = cardProp[pos].liveURL;
+    modal.querySelector('.source').href = cardProp[pos].sourceURL;
     modal.style.display = "block";
   });
 }
