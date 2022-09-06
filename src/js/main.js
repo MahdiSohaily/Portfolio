@@ -58,9 +58,31 @@ for (let index = 0; index < cards.length; index++) {
   let picture = cards[index].querySelector(".img-container img").src;
   let description = cards[index].querySelector(".details").innerText;
   let technology = cards[index].querySelector(".tags").innerHTML;
-  let liveURL = 'https://mahdisohaily.github.io/Portfolio/';
-  let sourceURL= 'https://github.com/MahdiSohaily/Portfolio';
+  let liveURL = "https://mahdisohaily.github.io/Portfolio/";
+  let sourceURL = "https://github.com/MahdiSohaily/Portfolio";
 
-  cardProp.push(new cardObject(title, timeline, picture, description, technology, liveURL, sourceURL));
+  cardProp.push(
+    new cardObject(
+      title,
+      timeline,
+      picture,
+      description,
+      technology,
+      liveURL,
+      sourceURL
+    )
+  );
 }
 
+const modalButton = document.querySelectorAll(".show");
+const modal = document.querySelector(".modal-container");
+const closeModal = document.getElementById('close-modal');
+for (let index = 0; index < modalButton.length; index++) {
+  modalButton[index].addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+}
+
+closeModal.addEventListener('click',() => {
+  modal.style.display = "none";
+})

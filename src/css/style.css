@@ -688,7 +688,9 @@ textarea {
 }
 
 /* Modal styles */
-
+.modal-container {
+  display: none;
+}
 .modal {
   position: fixed;
   background-color: rgba(128, 128, 128, 0.504);
@@ -701,10 +703,11 @@ textarea {
 
 .modal-box {
   max-width: min(1200px, 90%);
-  height: 95vh;
+  height: 90vh;
   background-color: var(--color-white);
   border-radius: 8px;
   padding: var(--size-300);
+  overflow-y: scroll;
 }
 
 .modal-header {
@@ -742,6 +745,7 @@ textarea {
   }
   .modal-desc {
     flex: 70%;
+    background-color: #20293f;
   }
   .accessory {
     flex: 30%;
