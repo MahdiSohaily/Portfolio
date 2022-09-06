@@ -703,7 +703,7 @@ textarea {
 
 .modal-box {
   max-width: min(1200px, 90%);
-  height: 90vh;
+  height: 98vh;
   background-color: var(--color-white);
   border-radius: 8px;
   padding: var(--size-300);
