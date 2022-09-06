@@ -72,7 +72,7 @@ for (let index = 0; index < modalButton.length; index+=1) {
     modal.querySelector('.tags').innerHTML = cardProp[pos].technology;
     modal.querySelector('.live').href = cardProp[pos].liveURL;
     modal.querySelector('.source').href = cardProp[pos].sourceURL;
-    modal.style.display = 'block',
+    modal.style.display = 'block';
   });
 }
 
