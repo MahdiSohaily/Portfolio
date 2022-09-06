@@ -82,6 +82,8 @@ for (let index = 0; index < modalButton.length; index++) {
   modalButton[index].addEventListener("click", (e) => {
     let pos = e.target.getAttribute("data-index");
     modal.querySelector('.modal-title').innerHTML = cardProp[pos].title;
+    modal.querySelector('.timeline').innerHTML = cardProp[pos].timeline;
+    modal.querySelector('.img-container img').src = cardProp[pos].picture;
     modal.style.display = "block";
   });
 }
