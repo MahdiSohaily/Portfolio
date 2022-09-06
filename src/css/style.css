@@ -716,6 +716,14 @@ textarea {
   align-items: center;
 }
 
+.modal-title {
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+}
+
 .timeline {
   display: flex;
   gap: 10px;
