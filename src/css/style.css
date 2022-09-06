@@ -776,6 +776,25 @@ textarea {
   }
 }
 
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 270px;
+}
+
+.live,
+.source {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 120px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
 .img-btn {
   font-size: 12px;
 }
