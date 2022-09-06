@@ -280,7 +280,8 @@ nav {
   justify-content: center;
   align-items: center;
   min-height: 85vh;
-  background: url("../images/header-shap-mobile.svg"),
+  background:
+    url("../images/header-shap-mobile.svg"),
     url("../images/header-mobile.png");
   background-repeat: no-repeat;
   background-size: contain, cover;
@@ -295,7 +296,8 @@ nav {
     align-items: center;
     min-height: 800px;
     padding-bottom: var(--size-500);
-    background: url("../images/header-shap-desktop.svg"),
+    background:
+      url("../images/header-shap-desktop.svg"),
       url("../images/header-desktop.png");
     background-repeat: no-repeat;
     background-size: contain, cover;
@@ -737,7 +739,7 @@ textarea {
   align-items: center;
 }
 
-.img-container {
+.modal .img-container {
   max-width: min(600px, 95%);
   margin-inline: auto;
 }
@@ -757,9 +759,9 @@ textarea {
   padding-top: 50px;
 }
 
-.tags {
+.modal .tags {
   padding-bottom: 15px;
-  border-bottom: 0.1px solid rgba(128, 128, 128, 0.2) ;
+  border-bottom: 0.1px solid rgba(128, 128, 128, 0.2);
 }
 
 @media screen and (min-width: 40em) {
@@ -771,6 +773,7 @@ textarea {
   .modal-desc {
     flex: 70%;
   }
+
   .accessory {
     flex: 30%;
   }
