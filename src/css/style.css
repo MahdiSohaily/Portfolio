@@ -688,3 +688,65 @@ textarea {
     background-position: top right;
   }
 }
+
+/* Modal styles */
+
+.modal {
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.504);
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  max-width: min(1200px, 90%);
+  background-color: var(--color-white);
+  border-radius: 8px;
+  padding: var(--size-300);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--color-nav-p);
+}
+
+.img-container {
+  background-color: red;
+  max-width: min(600px, 90%);
+  margin-inline: auto;
+}
+
+.img-container img {
+  width: 100%;
+  height: 500px;
+}
+
+.desc-box {
+  display: flex;
+  padding-block: var(--size-500);
+  font-size: 16px;
+  color: var(--color-nav-p);
+}
+
+.modal-desc {
+  flex: 70%;
+}
+.accessory {
+  flex: 30%;
+}
+
+.img-btn {
+  display: flex;
+  gap: 10px;
+}
