@@ -280,8 +280,7 @@ nav {
   justify-content: center;
   align-items: center;
   min-height: 85vh;
-  background:
-    url("../images/header-shap-mobile.svg"),
+  background: url("../images/header-shap-mobile.svg"),
     url("../images/header-mobile.png");
   background-repeat: no-repeat;
   background-size: contain, cover;
@@ -296,8 +295,7 @@ nav {
     align-items: center;
     min-height: 800px;
     padding-bottom: var(--size-500);
-    background:
-      url("../images/header-shap-desktop.svg"),
+    background: url("../images/header-shap-desktop.svg"),
       url("../images/header-desktop.png");
     background-repeat: no-repeat;
     background-size: contain, cover;
@@ -709,7 +707,7 @@ textarea {
   background-color: var(--color-white);
   border-radius: 8px;
   padding: var(--size-300);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .modal-header {
@@ -720,9 +718,8 @@ textarea {
 
 .modal-title {
   font-family: Poppins, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 52px;
   text-align: left;
 }
 
@@ -745,7 +742,7 @@ textarea {
 }
 
 .img-container img {
-  width: 90%;
+  width: 80%;
   display: block;
   margin: auto;
 }
@@ -756,7 +753,6 @@ textarea {
   padding-block: var(--size-300);
   font-size: 16px;
   color: var(--color-nav-p);
-  padding-top: 50px;
 }
 
 .modal .tags {
@@ -765,9 +761,13 @@ textarea {
 }
 
 @media screen and (min-width: 40em) {
+  .modal-box {
+    height: 90vh;
+  }
+
   .desc-box {
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
   }
 
   .modal-desc {
@@ -782,7 +782,7 @@ textarea {
 .modal-buttons {
   display: flex;
   justify-content: space-around;
-  width: 270px;
+  gap: 10px;
 }
 
 .live,
