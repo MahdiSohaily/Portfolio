@@ -34,7 +34,7 @@ window.addEventListener('resize', () => {
 const cards = document.querySelectorAll('.card');
 const cardProp = [];
 
-function cardObject(title, timeline, picture, description, technology, liveURL, sourceURL) {
+function CardObject(title, timeline, picture, description, technology, liveURL, sourceURL) {
   this.title = title;
   this.timeline = timeline;
   this.picture = picture;
@@ -44,7 +44,7 @@ function cardObject(title, timeline, picture, description, technology, liveURL, 
   this.sourceURL = sourceURL;
 }
 
-for (let index = 0; index < cards.length; index+=1) {
+for (let index = 0; index < cards.length; index += 1) {
   const title = cards[index].querySelector('.secondary-header').innerText;
   const timeline = cards[index].querySelector('.counter').innerHTML;
   const picture = cards[index].querySelector('.img-container img').src;
@@ -54,14 +54,14 @@ for (let index = 0; index < cards.length; index+=1) {
   const sourceURL = 'https://github.com/MahdiSohaily/Portfolio';
 
   cardProp.push(
-    new cardObject(title, timeline, picture, description, technology, liveURL, sourceURL)
+    new CardObject(title, timeline, picture, description, technology, liveURL, sourceURL)
   );
 }
 
 const modalButton = document.querySelectorAll('.show');
 const modal = document.querySelector('.modal-container');
 const closeModal = document.getElementById('close-modal');
-for (let index = 0; index < modalButton.length; index+=1) {
+for (let index = 0; index < modalButton.length; index += 1) {
   modalButton[index].setAttribute('data-index', index);
   modalButton[index].addEventListener('click', (e) => {
     const pos = e.target.getAttribute('data-index');
