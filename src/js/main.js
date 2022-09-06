@@ -74,18 +74,18 @@ for (let index = 0; index < cards.length; index++) {
   );
 }
 
-// const modalButton = document.querySelectorAll(".show");
-// const modal = document.querySelector(".modal-container");
-// const closeModal = document.getElementById("close-modal");
-// for (let index = 0; index < modalButton.length; index++) {
-//   modalButton[index].setAttribute("data-index", index);
-//   modalButton[index].addEventListener("click", (e) => {
-//     let pos = e.target.getAttribute("data-index");
-//     modal.querySelector('.modal-title').innerHTML = cardProp[pos].title;
-//     modal.style.display = "block";
-//   });
-// }
+const modalButton = document.querySelectorAll(".show");
+const modal = document.querySelector(".modal-container");
+const closeModal = document.getElementById("close-modal");
+for (let index = 0; index < modalButton.length; index++) {
+  modalButton[index].setAttribute("data-index", index);
+  modalButton[index].addEventListener("click", (e) => {
+    let pos = e.target.getAttribute("data-index");
+    modal.querySelector('.modal-title').innerHTML = cardProp[pos].title;
+    modal.style.display = "block";
+  });
+}
 
-// closeModal.addEventListener("click", () => {
-//   modal.style.display = "none";
-// });
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
