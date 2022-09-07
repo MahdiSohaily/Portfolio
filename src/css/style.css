@@ -830,6 +830,6 @@ textarea {
 
   .live,
   .source {
-  width: 120px;
-}
+    width: 120px;
+  }
 }
