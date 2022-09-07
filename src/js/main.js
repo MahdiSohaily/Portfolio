@@ -251,9 +251,9 @@ emailInput.addEventListener('focus',() => {
   error.style.display = 'none';
 });
 
-// function validateForm() {
-//   const email = emailInput.value;
-//   const regex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+function validateForm() {
+  const email = emailInput.value;
+  const regex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 
 //   if (!regex.test(email)) {
 //     error.style.display = 'block';
@@ -261,7 +261,7 @@ emailInput.addEventListener('focus',() => {
 //     return false;
 //   }
 //   return true;
-// }
+}
 
 // const form = document.querySelector('.contact-form');
 // form.addEventListener('submit', validateForm);
