@@ -780,9 +780,9 @@ textarea {
   color: var(--color-nav-p);
 }
 
-.modal .tags {
-  padding-bottom: 15px;
-  border-bottom: 0.1px solid rgba(128, 128, 128, 0.2);
+.modal .modal-buttons {
+  padding-top: 15px;
+  border-top: 0.1px solid rgba(128, 128, 128, 0.2);
 }
 
 @media screen and (min-width: 40em) {
