@@ -263,5 +263,5 @@ function validateForm() {
   return true;
 }
 
-// const form = document.querySelector('.contact-form');
-// form.addEventListener('submit', validateForm);
+const form = document.querySelector('.contact-form');
+form.addEventListener('submit', validateForm);
