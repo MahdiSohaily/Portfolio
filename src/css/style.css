@@ -705,11 +705,11 @@ textarea {
 }
 
 .modal-box {
-  max-width: min(700px, 90%);
+  max-width: min(900px, 90%);
   background-color: var(--color-white);
   border-radius: 8px;
   padding: var(--size-300);
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .modal-header {
@@ -720,15 +720,16 @@ textarea {
 
 .modal-title {
   font-family: Poppins, sans-serif;
-  font-size: 30px;
+  font-size: 32px;
+  line-height: 44px;
   font-weight: 700;
-  text-align: left;
+  color: #172b4d;
 }
 
 .timeline {
   display: flex;
   gap: 10px;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--color-nav-p);
   margin-bottom: 20px;
 }
@@ -736,17 +737,39 @@ textarea {
 .modal .timeline li {
   display: flex;
   align-items: center;
+  color: #7a869a;
+  font-weight: 600;
 }
 
-.modal .img-container {
-  max-width: min(600px, 95%);
-  margin-inline: auto;
+.modal .timeline li.active {
+  color: #344563;
+}
+
+@media screen and (min-width: 40em) {
+  .modal-title {
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+
+  .timeline {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .modal .timeline li {
+    font-weight: 600;
+  }
+
+  .modal .timeline li.active {
+    color: #344563;
+  }
 }
 
 .img-container img {
-  width: 80%;
-  display: block;
-  margin: auto;
+  width: 100%;
+  height: auto;
 }
 
 .desc-box {
