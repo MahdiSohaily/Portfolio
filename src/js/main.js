@@ -255,12 +255,12 @@ function validateForm() {
   const email = emailInput.value;
   const regex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 
-//   if (!regex.test(email)) {
-//     error.style.display = 'block';
-//     error.innerHTML = 'The email should only contain lowercase letters';
-//     return false;
-//   }
-//   return true;
+  if (!regex.test(email)) {
+    error.style.display = 'block';
+    error.innerHTML = 'The email should only contain lowercase letters';
+    return false;
+  }
+  return true;
 }
 
 // const form = document.querySelector('.contact-form');
