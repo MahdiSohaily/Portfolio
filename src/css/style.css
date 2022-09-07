@@ -817,7 +817,7 @@ textarea {
   display: flex;
   justify-content: space-around;
   text-decoration: none;
-  width: 120px;
+  flex: 50%;
   font-family: Poppins, sans-serif;
   font-size: 15px;
   font-weight: 500;
