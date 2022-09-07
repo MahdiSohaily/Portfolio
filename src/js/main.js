@@ -253,7 +253,7 @@ emailInput.addEventListener('focus',() => {
 
 function validateForm() {
   const email = emailInput.value;
-  const regex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+  const regex = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 
   if (!regex.test(email)) {
     error.style.display = 'block';
