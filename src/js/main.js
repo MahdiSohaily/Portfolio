@@ -247,7 +247,7 @@ closeModal.addEventListener('click', () => {
 // Form validation scripts
 const emailInput = document.querySelector('input[type="email"]');
 const error = document.querySelector('.error');
-emailInput.addEventListener('focus',() => {
+emailInput.addEventListener('focus', () => {
   error.style.display = 'none';
 });
 
