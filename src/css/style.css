@@ -710,7 +710,7 @@ textarea {
   background-color: var(--color-white);
   border-radius: 8px;
   padding: var(--size-300);
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .modal-header {
