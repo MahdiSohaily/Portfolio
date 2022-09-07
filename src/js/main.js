@@ -244,12 +244,12 @@ closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
-// // Form validation scripts
-// const emailInput = document.querySelector('input[type="email"]');
-// const error = document.querySelector('.error');
-// emailInput.addEventListener('focus',() => {
-//   error.style.display = 'none';
-// });
+// Form validation scripts
+const emailInput = document.querySelector('input[type="email"]');
+const error = document.querySelector('.error');
+emailInput.addEventListener('focus',() => {
+  error.style.display = 'none';
+});
 
 // function validateForm() {
 //   const email = emailInput.value;
