@@ -688,3 +688,148 @@ textarea {
     background-position: top right;
   }
 }
+
+/* Modal styles */
+.modal-container {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.9);
+  top: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  max-width: min(900px, 90%);
+  background-color: var(--color-white);
+  border-radius: 8px;
+  padding: var(--size-300);
+  overflow-y: scroll;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modal-title {
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.timeline {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--color-nav-p);
+  margin-bottom: 20px;
+}
+
+.modal .timeline li {
+  display: flex;
+  align-items: center;
+  color: #7a869a;
+  font-weight: 600;
+}
+
+.modal .timeline li.active {
+  color: #344563;
+}
+
+@media screen and (min-width: 40em) {
+  .modal-title {
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+
+  .timeline {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .modal .timeline li {
+    font-weight: 600;
+  }
+
+  .modal .timeline li.active {
+    color: #344563;
+  }
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.desc-box {
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--size-300);
+  font-size: 16px;
+  color: var(--color-nav-p);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 0.1px solid rgba(128, 128, 128, 0.2);
+}
+
+.live,
+.source {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  flex: 50%;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.img-btn {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 40em) {
+  .modal-box {
+    height: 90vh;
+  }
+
+  .desc-box {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .modal-desc {
+    flex: 70%;
+  }
+
+  .accessory {
+    flex: 30%;
+  }
+
+  .tech-box .tags {
+    margin-top: -4px;
+  }
+
+  .live,
+  .source {
+    width: 120px;
+  }
+}
