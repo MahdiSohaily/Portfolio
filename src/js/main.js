@@ -245,9 +245,14 @@ closeModal.addEventListener('click', () => {
 });
 
 // // Form validation scripts
+// const emailInput = document.querySelector('input[type="email"]');
+// const error = document.querySelector('.error');
+// emailInput.addEventListener('focus',() => {
+//   error.style.display = 'none';
+// });
+
 // function validateForm() {
-//   const error = document.querySelector('.error');
-//   const email = document.querySelector('input[type="email"]').value;
+//   const email = emailInput.value;
 //   const regex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 
 //   if (!regex.test(email)) {
@@ -256,4 +261,7 @@ closeModal.addEventListener('click', () => {
 //     return false;
 //   }
 //   return true;
-//  }
+// }
+
+// const form = document.querySelector('.contact-form');
+// form.addEventListener('submit', validateForm);
