@@ -653,6 +653,13 @@ textarea {
   outline: none;
 }
 
+/* Error message styles */
+.error {
+  color: rgb(198, 8, 8);
+  font-family: inherit;
+  font-size: 12px;
+}
+
 .contact-button {
   display: inline-block;
   width: 140px;

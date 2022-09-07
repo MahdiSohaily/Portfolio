@@ -156,13 +156,13 @@
           built or a project that
           needs coding. I’d love to help with it </p>
 
-        <form action="https://formspree.io/f/xdojkeey" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/xdojkeey" method="POST" class="contact-form" onsubmit="return validateForm();">
           <input type="text" name="full-name" maxlength="30" placeholder="Insert your Full Name" required
             aria-label="full-name">
           <input type="email" name="email" placeholder="Insert your Email" required aria-label="email Address">
           <textarea name="message" maxlength="500" placeholder="Write your message here" rows="7" required
             aria-label="message"></textarea>
-          <div class="error-box"></div>
+            <p class="error">Something went wrong</p>
           <button type="submit" class="btn contact-button">Get in touch</button>
         </form>
       </section>
