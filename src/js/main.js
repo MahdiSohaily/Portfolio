@@ -243,3 +243,25 @@ for (let index = 0; index < modalButton.length; index += 1) {
 closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });
+
+// Form validation scripts
+const emailInput = document.querySelector('input[type="email"]');
+const error = document.querySelector('.error');
+emailInput.addEventListener('focus', () => {
+  error.style.display = 'none';
+});
+
+function validateForm() {
+  const email = emailInput.value;
+  const regex = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+
+  if (!regex.test(email)) {
+    error.style.display = 'block';
+    error.innerHTML = 'The email should only contain lowercase letters';
+    return false;
+  }
+  return true;
+}
+
+const form = document.querySelector('.contact-form');
+form.addEventListener('submit', validateForm);
