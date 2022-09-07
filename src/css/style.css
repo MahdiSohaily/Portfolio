@@ -780,7 +780,10 @@ textarea {
   color: var(--color-nav-p);
 }
 
-.modal .modal-buttons {
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
   padding-top: 15px;
   border-top: 0.1px solid rgba(128, 128, 128, 0.2);
 }
@@ -802,12 +805,6 @@ textarea {
   .accessory {
     flex: 30%;
   }
-}
-
-.modal-buttons {
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
 }
 
 .live,
