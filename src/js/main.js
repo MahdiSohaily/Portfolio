@@ -113,8 +113,15 @@ for (let index = 0; index < cardProp.length; index += 1) {
     timeline.appendChild(item);
     if (count === 0) {
       item.classList.add('active');
+      const divide = document.createElement('li');
+      const divider = document.createElement('img');
+      divider.src = timelineDivider;
+      divider.setAttribute('width', 5);
+      divider.setAttribute('height', 5);
+      divide.appendChild(divider);
+      timeline.appendChild(divide);
     }
-    if (count % 2 === 0) {
+    if (count % 2 !== 0) {
       const divide = document.createElement('li');
       const divider = document.createElement('img');
       divider.src = timelineDivider;
@@ -191,8 +198,15 @@ function printTimeline(timeline) {
     timeline2.appendChild(item);
     if (count === 0) {
       item.classList.add('active');
+      const divide = document.createElement('li');
+      const divider = document.createElement('img');
+      divider.src = timelineDivider;
+      divider.setAttribute('width', 5);
+      divider.setAttribute('height', 5);
+      divide.appendChild(divider);
+      timeline2.appendChild(divide);
     }
-    if (count % 2 === 0) {
+    if (count % 2 !== 0) {
       const divide = document.createElement('li');
       const divider = document.createElement('img');
       divider.src = timelineDivider;
