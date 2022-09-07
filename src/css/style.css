@@ -658,6 +658,7 @@ textarea {
   color: rgb(198, 8, 8);
   font-family: inherit;
   font-size: 12px;
+  display: none;
 }
 
 .contact-button {

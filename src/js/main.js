@@ -243,3 +243,17 @@ for (let index = 0; index < modalButton.length; index += 1) {
 closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });
+
+// // Form validation scripts
+// function validateForm() {
+//   const error = document.querySelector('.error');
+//   const email = document.querySelector('input[type="email"]').value;
+//   const regex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+
+//   if (!regex.test(email)) {
+//     error.style.display = 'block';
+//     error.innerHTML = 'The email should only contain lowercase letters';
+//     return false;
+//   }
+//   return true;
+//  }
