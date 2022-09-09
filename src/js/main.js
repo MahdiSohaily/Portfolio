@@ -265,3 +265,8 @@ function validateForm() {
 
 const form = document.querySelector('.contact-form');
 form.addEventListener('submit', validateForm);
+
+/* Web storage scripts */
+
+const userName = document.querySelector('.user-name');
+const messageInput = document.querySelector('textarea');
