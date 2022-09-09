@@ -281,3 +281,11 @@ form.addEventListener('submit', () => {
   localStorage.setItem('contactFormInput', JSON.stringify(formData));
 });
 
+let savedFormData = localStorage.getItem('contactFormInput');
+savedFormData = JSON.parse(savedFormData);
+
+// if (savedFormData != null) {
+//   userName.value = savedFormData.name;
+//   emailInput.value = savedFormData.email;
+//   messageInput.value = savedFormData.messageInput;
+// }
