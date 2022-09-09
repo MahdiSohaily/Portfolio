@@ -270,3 +270,13 @@ form.addEventListener('submit', validateForm);
 
 const userName = document.querySelector('.user-name');
 const messageInput = document.querySelector('textarea');
+
+form.addEventListener('input', () => {
+  const formData = {
+    name: userName.value,
+    email: emailInput.value,
+    messageInput: messageInput.value,
+  };
+
+  localStorage.setItem('contactFormInput', JSON.stringify(formData));
+});
