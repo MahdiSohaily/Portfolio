@@ -271,7 +271,7 @@ form.addEventListener('submit', validateForm);
 const userName = document.querySelector('.user-name');
 const messageInput = document.querySelector('textarea');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', () => {
   const formData = {
     name: userName.value,
     email: emailInput.value,
