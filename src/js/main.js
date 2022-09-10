@@ -253,7 +253,7 @@ emailInput.addEventListener('focus', () => {
 
 function validateForm() {
   const email = emailInput.value;
-  const regex = '/^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/';
+  const regex = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 
   if (!regex.test(email)) {
     error.style.display = 'block';
@@ -277,7 +277,7 @@ form.addEventListener('submit', () => {
     email: emailInput.value,
     messageInput: messageInput.value,
   };
-  localStorage.setItem('contactFormInput', formData);
+  localStorage.setItem('contactFormInput', JSON.stringify(formData));
 });
 
 let savedFormData = localStorage.getItem('contactFormInput');
