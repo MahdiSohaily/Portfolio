@@ -265,3 +265,26 @@ function validateForm() {
 
 const form = document.querySelector('.contact-form');
 form.addEventListener('submit', validateForm);
+
+/* Web storage scripts */
+
+const userName = document.querySelector('.user-name');
+const messageInput = document.querySelector('textarea');
+
+form.addEventListener('submit', () => {
+  const formData = {
+    name: userName.value,
+    email: emailInput.value,
+    messageInput: messageInput.value,
+  };
+  localStorage.setItem('contactFormInput', JSON.stringify(formData));
+});
+
+let savedFormData = localStorage.getItem('contactFormInput');
+savedFormData = JSON.parse(savedFormData);
+
+if (savedFormData != null) {
+  userName.value = savedFormData.name;
+  emailInput.value = savedFormData.email;
+  messageInput.value = savedFormData.messageInput;
+}
