@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Portfolio
 
 > I'm going to build this portfolio in order to show the future projects that I'm going to build 
